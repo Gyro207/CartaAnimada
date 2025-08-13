@@ -4,7 +4,7 @@ body {
 
     margin: 0; /* Add this */
 
-    overflow: hidden; /* Prevent scrollbars during animation */
+    overflow-y: auto; /* Prevent scrollbars during animation */
 
     transition: background 1s ease-in-out; /* Transition for background change */
 
@@ -499,5 +499,6 @@ body.love-revealed .heart5 { left: 90%; animation-delay: 5s; }
         opacity: 0;
 
     }
+
 
 }
