@@ -381,7 +381,7 @@ body.love-revealed #love-message-overlay {
 
 .love-message-content h1 {
 
-    font-size: 3em;
+    font-size: 2em;
 
     margin-bottom: 10px;
 
@@ -497,5 +497,6 @@ body.love-revealed .heart5 { left: 90%; animation-delay: 5s; }
 
 
 }
+
 
 
