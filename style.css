@@ -309,36 +309,31 @@ body.love-revealed .letter-image {
 /* Styles for the message overlay */
 
 #love-message-overlay {
-
-    position: fixed;
-
-    top: 0;
-
-    left: 0;
-
-    width: 100%;
-
-    height: 100%;
-
-    background-color: rgba(0, 0, 0, 0.3); /* Slight dark overlay */
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    opacity: 0;
-
-    visibility: hidden;
-
-    z-index: 100;
-
-    transition: opacity 1s ease-in-out 0.3s, visibility 1s step-end 0.3s; /* Fade in after letter fades */
-
-    overflow: auto; /* Hide overflowing hearts */
-
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px 0;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
+  transition: opacity 1s ease-in-out 0.3s, visibility 1s step-end 0.3s;
+  overflow-y: auto;
 }
+
+.love-message-content {
+  max-width: 760px;
+  width: calc(100% - 32px);
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .love-message-content { padding: 24px 16px; }
+}
+
 
 body.love-revealed #love-message-overlay {
 
@@ -502,4 +497,5 @@ body.love-revealed .heart5 { left: 90%; animation-delay: 5s; }
 
 
 }
+
 
